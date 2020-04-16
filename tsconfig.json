@@ -1,9 +1,15 @@
 {
 	"extends": "eslint-config-bamboo",
 	"compilerOptions": {
-		"target": "ES2019"
+		"target": "ES2019",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedParameters": true,
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true
 	},
 	"include": [
-		"src/**/*.ts"
+		"src.old/**/*.ts", "src/lib/utils/bitfields/Speaking.ts", "src/lib/utils/bitfields/Permissions.ts", "src/lib/utils/bitfields/UserFlags.ts"
 	]
 }
